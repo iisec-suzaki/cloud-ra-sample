@@ -1,0 +1,5 @@
+client/attestation-document.dat
+client/attestation-document-json.json
+client/root.pem
+venv/
+server/attestation.eif
