@@ -1,6 +1,11 @@
 # Cloud Remote Attestation Sample
 This project provides comprehensive sample code and tutorials for implementing Remote Attestation across different isolation technologies in cloud environments. Remote Attestation is a cryptographic protocol that allows a remote user (a relying party) to verify the integrity and authenticity of a computing environment (an attester).
 
+## News
+Presentation at [FOSDEM2025 Confidential Computing Devroom](https://fosdem.org/2026/schedule/track/confidential-computing/) entitled "[Lesson from Cloud Confidential Computing Remote Attestation Sample](https://fosdem.org/2026/schedule/event/RVSEMG-cloud-ra-sample/)"  
+
+## Detial
+
 ### Supported Technologies
 - **AMD SEV-SNP** (Secure Encrypted Virtualization - Secure Nested Paging) - Hardware-based, VM-level isolation
 - **Intel SGX** (Software Guard Extensions) - Hardware-based, Process-level isolation
