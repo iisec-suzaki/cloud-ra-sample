@@ -41,7 +41,7 @@ Used to get/verify SEV-SNP AR and VEK certs.
 
 When using the report subcommand in an Azure CVM, the `--platform` flag must be set. To enable this flag, you need to build with the `--features hyperv` option.
 
-### AWS/GCP/Local Verifier
+### AWS/GCP/Sakura/Local Verifier
 ```bash
 git clone https://github.com/virtee/snpguest 
 cd snpguest
@@ -53,7 +53,7 @@ sudo mv target/release/snpguest /usr/local/bin/
 ```bash
 sudo apt update
 sudo apt install -y pkg-config libtss2-dev
-git clone https://github.com/virtee/snpguest
+git clone https://github.com/virtee/snpguest -b v0.9.2
 cd snpguest
 cargo build -r --features hyperv
 sudo mv target/release/snpguest /usr/local/bin/
