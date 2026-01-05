@@ -35,6 +35,7 @@ git clone https://github.com/acompany-develop/cloud-ra-sample
 │  ├── AWS
 │  ├── Azure
 │  ├── GCP
+│  ├── Sakura
 │  ├── common
 │  └── Documents
 ...
@@ -54,6 +55,8 @@ The correspondence between the sample code and CSPs is as follows:
 | `Azure/azure-snp-sra-by-tpm2-tools.sh` | Azure CVM only | VCEK | `tpm2-tools` | `snpguest` |
 | `GCP/gcp-snp-sra-by-go-sev-guest.sh` | GCP | VCEK | `go-sev-guest` | `go-sev-guest` |
 | `GCP/gcp-snp-sra-by-snpguest.sh` | GCP | VCEK | `snpguest` | `snpguest` |
+| `Sakura/sakura-snp-sra-by-go-sev-guest.sh` | Sakura | VCEK | `go-sev-guest` | `go-sev-guest` |
+| `Sakura/sakura-snp-sra-by-snpguest.sh` | Sakura | VCEK | `snpguest` | `snpguest` |
 | `GCP/gcp-snp-xra-by-snpguest.sh` | GCP | VCEK | `snpguest` | `snpguest` |
 | `common/common-snp-xra-by-go-sev-guest.sh` | AWS & GCP | VCEK & VLEK | `go-sev-guest` | `go-sev-guest` |
 |
@@ -152,6 +155,22 @@ Compatible with GCP. Also usable in other environments as long as the AR is sign
 4. Verify the Chain of Trust ARK→ASK→VCEK→AR and nonce
 
 Compatible with GCP. Also usable in other environments as long as the AR is signed with VCEK and an Extended AR (with the whole VCEK cert chain) can be fetched via `/dev/sev-guest`.
+
+### `Sakura/sakura-snp-sra-by-go-sev-guest.sh`
+1. Generate nonce
+2. Request Attestation Report from AMD-SP with nonce as REPORT_DATA
+3. Fetch VCEK, ASK, ARK certificates from AMD KDS
+4. Verify the Chain of Trust ARK→ASK→VCEK→AR and nonce
+
+Compatible with Sakura. Also usable in other environments as long as the AR is signed with `VCEK` and an AR can be fetched by accessing `/dev/sev-guest`.
+
+### `Sakura/sakura-snp-sra-by-snpguest.sh`
+1. Generate nonce
+2. Request Attestation Report from AMD-SP with nonce as REPORT_DATA
+3. Fetch VCEK, ASK, ARK certificates from AMD KDS
+4. Verify the Chain of Trust ARK→ASK→VCEK→AR and nonce
+
+Compatible with Sakura. Also usable in other environments as long as the AR is signed with VCEK and an AR can be fetched via `/dev/sev-guest`.
 
 ### `common/common-snp-xra-by-go-sev-guest.sh`
 1. Generate nonce
