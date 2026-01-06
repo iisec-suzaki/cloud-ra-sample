@@ -55,9 +55,9 @@ The correspondence between the sample code and CSPs is as follows:
 | `Azure/azure-snp-sra-by-tpm2-tools.sh` | Azure CVM only | VCEK | `tpm2-tools` | `snpguest` |
 | `GCP/gcp-snp-sra-by-go-sev-guest.sh` | GCP | VCEK | `go-sev-guest` | `go-sev-guest` |
 | `GCP/gcp-snp-sra-by-snpguest.sh` | GCP | VCEK | `snpguest` | `snpguest` |
+| `GCP/gcp-snp-xra-by-snpguest.sh` | GCP | VCEK | `snpguest` | `snpguest` |
 | `Sakura/sakura-snp-sra-by-go-sev-guest.sh` | Sakura | VCEK | `go-sev-guest` | `go-sev-guest` |
 | `Sakura/sakura-snp-sra-by-snpguest.sh` | Sakura | VCEK | `snpguest` | `snpguest` |
-| `GCP/gcp-snp-xra-by-snpguest.sh` | GCP | VCEK | `snpguest` | `snpguest` |
 | `common/common-snp-xra-by-go-sev-guest.sh` | AWS & GCP | VCEK & VLEK | `go-sev-guest` | `go-sev-guest` |
 |
 | `Azure/azure-snp-vtpm-ra-by-tpm2-tools.sh` | Azure CVM only | VCEK | `tpm2-tools` | `tpm2-tools` (vTPM) + `snpguest` (SNP) |
