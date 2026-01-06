@@ -3,15 +3,15 @@ This project provides comprehensive sample code and tutorials for implementing R
 
 ## News
 - Add [Sakura Internet](https://www.sakura.ad.jp/) [Confidential Computing (AMD SEV-SNP)](https://cloud.sakura.ad.jp/products/server/confidential-vm/) RA samples.
-- Presentation at [FOSDEM2025 Confidential Computing Devroom](https://fosdem.org/2026/schedule/track/confidential-computing/) entitled "[Lesson from Cloud Confidential Computing Remote Attestation Sample](https://fosdem.org/2026/schedule/event/RVSEMG-cloud-ra-sample/)"  
+- Presentation at [FOSDEM2026 Confidential Computing Devroom](https://fosdem.org/2026/schedule/track/confidential-computing/) entitled "[Lesson from Cloud Confidential Computing Remote Attestation Sample](https://fosdem.org/2026/schedule/event/RVSEMG-cloud-ra-sample/)"  
 
-## Detial
+## Detail
 
 ### Supported Technologies
-- **AMD SEV-SNP** (Secure Encrypted Virtualization - Secure Nested Paging) - Hardware-based, VM-level isolation
-- **Intel SGX** (Software Guard Extensions) - Hardware-based, Process-level isolation
-- **Intel TDX** (Trust Domain Extensions) - Hardware-based, VM-level isolation
-- **AWS Nitro Enclaves** - Software (Hypervisor)-based, Container-level isolation
+- **AMD SEV-SNP** (Secure Encrypted Virtualization - Secure Nested Paging) - Single-vendor hardware-based (distrusted Hypervisor), VM-level isolation
+- **Intel SGX** (Software Guard Extensions) - Single-vendor hardware-based (distrusted Hypervisor), Process-level isolation
+- **Intel TDX** (Trust Domain Extensions) - Single-vendor hardware-based (distrusted Hypervisor), VM-level isolation
+- **AWS Nitro Enclaves** - Multi-vendor hardware virtualization (trusted Hypervisor)-based, VM-level isolation
 
 ### Supported Cloud Providers
 - **Amazon Web Services (AWS)**
