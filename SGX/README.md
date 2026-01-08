@@ -743,7 +743,7 @@ sequenceDiagram
     E->>E: Encrypt result with MK
     E->>S: Encrypted result
     S->>C: Forward encrypted result
-    C->>C: Decrypt with CK
+    C->>C: Decrypt with MK
 ```
 
 ## References

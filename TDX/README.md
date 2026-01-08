@@ -81,8 +81,6 @@ The Attester (Guest OS on the CVM) proves to the Relying Party (remote user) tha
 3. Verify the TD Quote with SGX-DCAP-QvL
 
 ## Usage
-
-### Direct Execution
 1. Clone this repository on your CVM
 2. Install the dependencies (see [CVM Environment Setup](./Documents/Preparation.md))
 3. Copy the shell script you wish to run to a working directory
