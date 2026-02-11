@@ -114,7 +114,7 @@ def generate_settings_file():
             mrsigner = None
     else:
         print("WARNING: Could not automatically extract measurements.")
-        print("  (This is normal if enclave.signed.so doesn't exist yet)")
+        print("  (Build the enclave and subtools/mr-extract first and try again.)")
     
     # Get MRENCLAVE and MRSIGNER if not auto-extracted
     if not mrenclave or not mrsigner:

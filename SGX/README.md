@@ -13,8 +13,8 @@ This tutorial has been tested in the following environment:
 - OS: Ubuntu 24.04.1
 - Kernel: 6.14.0-1012-azure
 - Storage: 30 GiB
-- Linux SGX Libraries: ver 2.26.100
-- DCAP Libraries: ver 1.23
+- Linux SGX Libraries: ver 2.27.100
+- DCAP Libraries: ver 1.24
 - Humane-RAFW-MAA: main (`df3c5eb`)
 
 ## Create an SGX enabled VM
@@ -132,8 +132,8 @@ groups
 Install Linux SGX SDK and Platform Software (PSW) following the [Linux SGX Documentation](https://github.com/intel/linux-sgx/blob/main/README.md).
 
 ```bash
-# Clone Linux SGX and prepare
-git clone https://github.com/intel/linux-sgx
+# Clone Linux SGX (v2.27) and prepare installation
+git clone https://github.com/intel/linux-sgx -b sgx_2.27_reproducible
 cd linux-sgx
 make preparation
 ```
@@ -146,7 +146,7 @@ make sdk
 make sdk_install_pkg
 # => ./linux/installer/bin/sgx_linux_x64_sdk_${VERSION}.bin
 
-VERSION="2.26.100.0" # Replace it with the actual version
+VERSION="2.27.100.0" # Replace it with the actual version
 
 # Install SGX SDK
 SGX_PACKAGES_PATH="/opt/intel"
@@ -174,7 +174,7 @@ sudo tee /etc/apt/sources.list.d/intel-sgx.list
 sudo apt update
 
 # Install SGX PSW
-sudo apt install libsgx-dcap-ql libsgx-quote-ex libsgx-headers
+sudo apt install -y libsgx-dcap-ql libsgx-quote-ex libsgx-headers
 ```
 
 #### Sanity check
@@ -238,7 +238,8 @@ If any of the messages report failure, revisit the previous setup steps before p
 ### SGX DCAP
 
 ```bash
-git clone --recursive https://github.com/intel/SGXDataCenterAttestationPrimitives
+# Clone DCAP Library (v1.24)
+git clone --recursive https://github.com/intel/SGXDataCenterAttestationPrimitives -b dcap_1.24_reproducible
 cd SGXDataCenterAttestationPrimitives/
 ```
 
@@ -294,6 +295,7 @@ This section provides a step-by-step instruction of the DCAP-based Remote Attest
 # Clone
 git clone https://github.com/acompany-develop/Humane-RAFW-MAA
 cd Humane-RAFW-MAA
+git checkout df3c5eb
 ```
 
 #### 2. Set CA Certs for HTTPS
