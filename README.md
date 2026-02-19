@@ -3,7 +3,7 @@ This project provides comprehensive sample code and tutorials for implementing R
 
 ## News
 - Add [Sakura Internet](https://www.sakura.ad.jp/) [Confidential Computing (AMD SEV-SNP)](https://cloud.sakura.ad.jp/products/server/confidential-vm/) RA samples.
-- Presentation at [FOSDEM2026 Confidential Computing Devroom](https://fosdem.org/2026/schedule/track/confidential-computing/) entitled "[Lesson from Cloud Confidential Computing Remote Attestation Sample](https://fosdem.org/2026/schedule/event/RVSEMG-cloud-ra-sample/)"  [Slide](https://fosdem.org/2026/events/attachments/RVSEMG-cloud-ra-sample/slides/266250/fosdem26-_6zqsyuu.pdf), [Video](https://ftp2.osuosl.org/pub/fosdem/2026/ud6215/RVSEMG-cloud-ra-sample.av1.webm)
+- Presentation at [FOSDEM2026 Confidential Computing Devroom](https://fosdem.org/2026/schedule/track/confidential-computing/) entitled "[Lesson from Cloud Confidential Computing Remote Attestation Sample](https://fosdem.org/2026/schedule/event/RVSEMG-cloud-ra-sample/)"  [Slide](https://fosdem.org/2026/events/attachments/RVSEMG-cloud-ra-sample/slides/267369/fosdem26-_6zqsyuu.pdf), [Video](https://ftp2.osuosl.org/pub/fosdem/2026/ud6215/RVSEMG-cloud-ra-sample.av1.webm)
 
 ## Detail
 
